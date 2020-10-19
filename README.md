@@ -17,8 +17,8 @@ Let's encrypt SSL,
 
 
 >> How to install:
-wget https://raw.githubusercontent.com/garousiamir/wp-docker/main/wp-docker.sh 
-chmod 777 wp-docker.sh
-sed -i "s/example.com/YOURDOMAIN/g" wp-docker.sh
-(instead of YOURDOMAIN you must put your own domain without www or http or https)
-./wp-docker.sh
+- wget https://raw.githubusercontent.com/garousiamir/wp-docker/main/wp-docker.sh 
+- chmod 777 wp-docker.sh
+- sed -i "s/example.com/YOURDOMAIN/g" wp-docker.sh
+- (instead of YOURDOMAIN you must put your own domain without www or http or https)
+- ./wp-docker.sh
