@@ -1,4 +1,5 @@
 # wp-docker
+![Image of repo](https://repository-images.githubusercontent.com/305295933/8757ac00-11fd-11eb-844a-100eea876928)
 A great shell script to help you deploy wordpress necessary infraustructure on any kink of ubunutu server.
 Getting a lemp stack working on a server can be very time eating and hard to get it work perfectly. that's why I created this to help expert Wordpress users so you could easily get a one click Wordpress server deployment.
 This shell is based on Docker.
