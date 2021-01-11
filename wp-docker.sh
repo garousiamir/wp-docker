@@ -2,6 +2,7 @@
 echo "Wordpress One click Infraustructure Deployment Created By AmirHossein Garousi"
 apt update && apt upgrade -y 
 apt install nano -y
+apt install unzip -y
 apt install docker.io -y 
 apt install docker-compose -y 
 cd /home
@@ -9,7 +10,8 @@ mkdir wordpress
 cd wordpress
 mkdir nginx-conf 
 cd nginx-conf
-wget http://udemy4geeks.online/wpsh/1st-nginx/nginx.conf
+wget http://udemy4geeks.online/wpsh/1st-nginx/nginx.zip
+unzip nginx.zip
 sed -i "s/example.com/myudemy.xyz/g" nginx.conf
 cd /home/wordpress
 wget http://udemy4geeks.online/wpsh/1st-docker/docker-compose.yml
@@ -24,7 +26,8 @@ docker-compose stop webserver
 curl -sSLo nginx-conf/options-ssl-nginx.conf https://raw.githubusercontent.com/certbot/certbot/master/certbot-nginx/certbot_nginx/_internal/tls_configs/options-ssl-nginx.conf
 rm -rf /home/wordpress/nginx-conf/nginx.conf
 cd /home/wordpress/nginx-conf
-wget http://udemy4geeks.online/wpsh/2nd-nginx/nginx.conf
+wget http://udemy4geeks.online/wpsh/2nd-nginx/nginx.zip
+unzip nginx.zip
 sed -i "s/example.com/myudemy.xyz/g" nginx.conf
 cd /home/wordpress
 rm -rf docker-compose.yml
